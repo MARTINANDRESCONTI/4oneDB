@@ -6,8 +6,8 @@ const { db } = require('./database/db.js');
 
 const itemRoutes = require('./routes/routes.js');
 
-const {PORT} = require('./routes/config.js')
-
+// const {PORT} = require('./routes/config.js')
+const PORT = process.env.PORT || 5000
 const app = express()
 
 app.use( cors() )
