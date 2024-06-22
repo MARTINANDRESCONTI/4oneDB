@@ -1,15 +1,3 @@
-// import ItemModel from "../models/Item.js";
-
-// mostrar todos los productos ordenados
-// export const getAllItems = async(req, res) => {
-//   try {
-//     const item = await ItemModel.findAll(
-//       res.json(item)
-//     )
-//   } catch (error) {
-//     res.json( {'message': 'no funca'})
-//   }
-// }
 // mostrar un producto ordenado
 // export const getItem = async(req, res) => {
 //   try {
@@ -21,15 +9,7 @@
 //     res.json( {'message': 'error.message'})
 //   }
 // }
-// agregar un producto
-// export const addItem = async (req, res) => {
-//   try {
-//     await ItemModel.create(req.body)
-//     res.json({'message': 'You add the item successfully'})
-//   } catch (error) {
-//     res.json( {'message': 'error.message'})
-//   }
-// }
+
 // actualizar un producto
 // export const updateItem = async (req, res) => {
 //   try {
