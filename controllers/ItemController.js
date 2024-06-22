@@ -55,16 +55,6 @@
 
 const { Item } = require('../database/db.js')
 
-// export const getAllItems = async(req, res) => {
-//   try {
-//     const item = await ItemModel.findAll(
-//       res.json(item)
-//     )
-//   } catch (error) {
-//     res.json( {'message': 'no funca'})
-//   }
-// }
-
 const getAllItems = async(req, res) => {
   try {
     const item = await Item.findAll(
