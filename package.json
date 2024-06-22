@@ -1,12 +1,11 @@
 {
   "name": "4onedb",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon app.js",
-    "start":"node app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +16,7 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.10.1",
     "sequelize": "^6.37.3"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
