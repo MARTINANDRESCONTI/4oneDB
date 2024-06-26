@@ -8,7 +8,6 @@ const itemRoutes = require('./routes/routes.js');
 
 const { PORT } = require('./routes/config.js')
 
-
 const app = express()
 
 app.use( cors() )
@@ -17,10 +16,10 @@ app.use(morgan('dev'))
 app.use('/items', itemRoutes)
 
 app.get('/', (req, res)=>{
-  res.send('HOla mundo')
+  res.send('All 4ONEs. Beer House')
 })
 
 app.listen(PORT, () =>{
   console.log(`server runing on port:${PORT}`);
-  db.sync({alter:true});
+  db.sync({force:true});
 })
