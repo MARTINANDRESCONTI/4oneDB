@@ -1,5 +1,7 @@
 const { Sequelize } = require('sequelize')
 const modelItem = require('../models/Item.js')
+const modelCustomer = require('../models/customer.js')
+
 const { 
   DB_HOST, 
   DB_PORT, 
@@ -14,8 +16,12 @@ const db = new Sequelize(`mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT
 
 
 modelItem(db);
+modelCustomer(db);
 
-const { Item } = db.models;
+const { Item, customer } = db.models;
+
+customer.hasMany(Item)
+Item.belongsTo(customer)
 
 module.exports = {
   ...db.models,

@@ -4,12 +4,13 @@ const modelItem = sequelize =>{
   sequelize.define('Item', {
     cerveza: { type: DataTypes.STRING
     },
-    pinta: { type: DataTypes.INTEGER
+    cantidadPinta: { type: DataTypes.INTEGER
+    },
+    fechaVendida: { type: DataTypes.DATEONLY
     }
   }, {
     timestamps:false
   })
 }
-
 
 module.exports = modelItem
