@@ -2,17 +2,7 @@ const { DataTypes } = require('sequelize')
 
 const modelBeer = sequelize =>{
   sequelize.define('beer', {
-    cerveza: { type: DataTypes.ENUM(
-      'PILSEN',
-      'AMERICAN LAGER',
-      'KÖLSCH',
-      'AMBER',
-      'IPA',
-      'PALE ALE',
-      'STOUT',
-      'BOCK',
-      'PORTER'
-    )
+    cerveza: { type: DataTypes.STRING
     },
     precio: { type: DataTypes.INTEGER
     }

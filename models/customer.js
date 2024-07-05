@@ -4,8 +4,11 @@ const modelCustomer = sequelize =>{
   sequelize.define('customer', {
     nombre: { type: DataTypes.STRING
     },
-    contraseña: { type: DataTypes.STRING, unique: true      
+    email: { type: DataTypes.STRING, unique: true  
     }
+    // ,
+    // password: { type: DataTypes.STRING    
+    // }
   }, {
     timestamps:false
   })
