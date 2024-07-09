@@ -2,18 +2,24 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
+// const cookieparser = require('cookie-parser');
+// const session = require('express-session');
+
 const { db } = require('./database/db.js');
-const { PORT } = require('./services/config.js')
 
 const itemRoutes = require('./routes/routes.js');
 const logRoutes = require('./routes/logroutes.js')
 
+const { PORT } = require('./services/config.js')
+
+// const { redirectLogin, redirectHome } = require('./services/loger.js')
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
 app.use(morgan('dev'))
+
 
 app.use('/items', itemRoutes)
 app.use('/log', logRoutes)
