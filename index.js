@@ -24,5 +24,5 @@ app.use('/', (req, res) => {
 
 app.listen(PORT, () =>{
   console.log(`server runing on port:${PORT}`);
-  db.sync({alter:true});  
+  db.sync({force:true});  
 })
