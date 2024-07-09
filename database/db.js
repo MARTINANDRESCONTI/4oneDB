@@ -26,8 +26,6 @@ const { Item, customer, beer, table } = db.models;
 
 customer.hasMany(Item)
 Item.belongsTo(customer)
-// customer.hasOne(table)
-// table.belongsTo(customer)
 
 module.exports = {
   ...db.models,
